@@ -1,7 +1,12 @@
 package posts
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func AddPostToDatabase() {
 	fmt.Printf("Hola")
+}
+
+func ShowAvailablePosts() {
 }
