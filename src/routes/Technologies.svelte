@@ -20,6 +20,7 @@
         align-items: center;
         flex-direction: column;
 		border-radius: 15px;
+        margin-bottom: 100px;
 		box-shadow: 0px 0px 20px var(--dblue);
 		background-image: radial-gradient(
 				circle at center center,
@@ -46,7 +47,7 @@
         align-items: center;
         gap: 20px;
         column-gap: 50px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
     .technologiesContainer h1 {

@@ -1,10 +1,10 @@
 <header class="header">
     <div class="content">
-        <h1>Relno.dev</h1>
+        <a href="/" class="logo">Relno.dev</a>
         <div class="navbarContent">
             <section>
-                <p>Publicaciones</p>
-                <p>Sobre</p>
+                <a href="/posts">Publicaciones</a>
+                <a href="/about">Sobre</a>
             </section>
             <section>
                 <p>Esp</p>
@@ -29,9 +29,11 @@
         justify-content: space-between;
     }
 
-    .content h1:nth-child(1) {
+    .logo {
         color: var(--darkblue);
         font-size: 22px;
+        font-weight: 700;
+        font-family: "Poppins";
     }
 
     .navbarContent {
@@ -46,7 +48,7 @@
         align-items: flex-end;
     }
 
-    .navbarContent section p {
+    .navbarContent section p, .navbarContent section a {
         margin: 10px;
         color: var(--dblue);
         font-weight: 600;
