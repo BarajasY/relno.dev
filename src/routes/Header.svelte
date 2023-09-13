@@ -3,8 +3,7 @@
         <h1>Relno.dev</h1>
         <div class="navbarContent">
             <section>
-                <p>Lenguajes</p>
-                <p>Tecnologias</p>
+                <p>Publicaciones</p>
                 <p>Sobre</p>
             </section>
             <section>
@@ -31,7 +30,7 @@
     }
 
     .content h1:nth-child(1) {
-        color: var(--sblue);
+        color: var(--darkblue);
         font-size: 22px;
     }
 
@@ -43,6 +42,8 @@
 
     .navbarContent section {
         display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     .navbarContent section p {
