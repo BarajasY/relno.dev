@@ -12,6 +12,7 @@
 <style>
     .footer {
         height: 100px;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;

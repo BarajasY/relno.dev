@@ -13,3 +13,16 @@
 
     <Footer/>
 </div>
+
+<style>
+    .app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .app main {
+        width: 100%;
+    }
+</style>

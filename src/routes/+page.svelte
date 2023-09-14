@@ -32,7 +32,6 @@
 		align-items: center;
 		flex-direction: column;
 		background-image: radial-gradient(
-			circle at center center,
 			rgb(15, 177, 180) 0%,
 			rgb(15, 177, 180) 3%,
 			rgb(255, 255, 255) 3%,
