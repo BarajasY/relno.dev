@@ -54,6 +54,13 @@ func main() {
 	router.GET("/posts", func(ctx *gin.Context) {
 		posts.ShowAvailablePosts(ctx, db)
 	})
+	router.GET("/tags", func(ctx *gin.Context) {
+		posts.RetrievePopularTags(ctx, db)
+	})
+	router.GET("/posts/:title", func(ctx *gin.Context) {
+		title := ctx.Param("title")
+		posts.ShowOnePost(ctx, db, title)
+	})
 
 	router.Run()
 }
