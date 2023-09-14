@@ -9,7 +9,7 @@ import (
 func MdToHTML(md string) []byte {
 	var byte []byte = []byte(md)
 
-	extensions := parser.CommonExtensions | parser.AutoHeadingIDs | parser.NoEmptyLineBeforeBlock
+	extensions := parser.CommonExtensions | parser.NoEmptyLineBeforeBlock
 	p := parser.NewWithExtensions(extensions)
 	doc := p.Parse(byte)
 
