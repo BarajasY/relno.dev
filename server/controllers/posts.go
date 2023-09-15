@@ -106,11 +106,19 @@ func ShowAvailablePosts(ctx *gin.Context, db *sql.DB) {
 }
 
 func ShowOnePost(ctx *gin.Context, db *sql.DB, title string) {
-	var post post = post{}
-
+	nomdpost := post{}
 	row := db.QueryRow("Select * from post where LOWER(post_title) = $1", title)
 
-	row.Scan(&post.Post_id, &post.Post_title, &post.Post_content, &post.Post_date, &post.Post_summary)
+	row.Scan(&nomdpost.Post_id, &nomdpost.Post_title, &nomdpost.Post_content, &nomdpost.Post_date, &nomdpost.Post_summary)
 
-	ctx.JSON(200, post)
+	mdpost := post{
+		Post_id: nomdpost.Post_id,
+		Post_title: nomdpost.Post_title,
+		//Converts markdown to html string.
+		Post_content: string(markdown.MdToHTML(nomdpost.Post_content)),
+		Post_date: nomdpost.Post_date,
+		Post_summary: nomdpost.Post_summary,
+	}
+
+	ctx.JSON(200, mdpost)
 }
