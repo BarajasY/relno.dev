@@ -7,7 +7,8 @@ export type post = {
     post_title: string;
     post_date: number;
     post_content: string;
-    post_tags: tag[]
+    post_summary: string;
+    post_tags: tag[];
 }
 
 export type tag = {

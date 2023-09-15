@@ -6,6 +6,10 @@
 	outline: none;
 }
 
+a {
+	color: black;
+}
+
 :root {
 	--darkblue: #203f5d;
 	--cyan: #26a6b1;
@@ -18,6 +22,10 @@
 	--ddblue: #72a3bc;
 	--dcyan: #3b7581;
 	--green :#5cb35d;
+	--dgreen: #6ea98a;
+	--bgreen: #19be59;
+	--bblue: #00a9eb;
+	--ddddblue: #291e56;
 	--dgray: #444472;
 	--dddblue: #122950;
 }

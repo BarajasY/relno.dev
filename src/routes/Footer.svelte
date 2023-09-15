@@ -3,9 +3,9 @@
         <h1>Relno.dev</h1>
     </section>
     <section>
-        <a href="linkedin.com">Linkedin</a>
-        <a href="linkedin.com">Linkedin</a>
-        <a href="linkedin.com">Linkedin</a>
+        <a href="https://www.linkedin.com/in/yahirmb/" target="_blank">Linkedin</a>
+        <a href="https://github.com/BarajasY" target="_blank" >Github</a>
+        <a href="https://yahir.vercel.app/" target="_blank">Portafolio</a>
     </section>
 </footer>
 
@@ -28,7 +28,7 @@
     }
 
     .footer section a {
-        color: var(--darkblue);
+        color: var(--ddddblue);
         margin: 10px;
         font-weight: 800;
     }

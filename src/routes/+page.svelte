@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Relno</title>
+	<title>Relno.dev</title>
 	<meta name="description" content="Relno.dev" />
 </svelte:head>
 
@@ -12,12 +12,14 @@
 	<div class="mainContent">
 		<section class="mainContentSection1">
 			<p>
-				En Relno.dev nos encargamos de compartir publicaciones en Español que resulten útiles para
-				mejorar tus habilidades dentro del desarrollo web, móvil y de escritorio.
+				En <span>Relno.dev</span> nos encargamos de compartir publicaciones en Español que resulten útiles para
+				mejorar tus habilidades dentro del desarrollo <span>web</span>, <span>móvil</span> y de <span>escritorio</span>.
 			</p>
 		</section>
 		<section class="mainContentSection2">
-			<button>Ver Posts</button>
+			<a href="/posts">
+				<button>Ver Posts</button>
+			</a>
 		</section>
 	</div>
 	<Technologies />
@@ -66,6 +68,11 @@
 	.mainContentSection1 p {
 		font-weight: 600;
 		font-size: 20px;
+		height: 100px;
+	}
+
+	.mainContentSection1 p span {
+		color: var(--cyan);
 	}
 
 	section {
@@ -85,6 +92,7 @@
 		font-family: 'Raleway';
 		font-size: 25px;
 		background: white;
+		color: var(--bblue);
 		box-shadow: 0px 0px 10px black;
 		font-weight: 700;
 		border-radius: 5px;
@@ -92,8 +100,8 @@
 	}
 
 	.mainContentSection2 button:hover {
-		background: black;
-		color: var(--lblue);
+		background: var(--black);
+		color: var(--bblue);
 		cursor: pointer;
 		box-shadow: 0px 0px 20px var(--ddblue);
 	}
